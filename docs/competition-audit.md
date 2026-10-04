@@ -9,7 +9,7 @@ This audit answers a stricter question than “does adapter code exist?”: can 
 | Mastra | Yes | Five-step runtime trace, source, and passing tests | Claim after public deployment |
 | Gemma | Not yet proven | Ollama adapter and private deployment manifest | Run Gemma and capture trace first |
 | TabPFN | Yes, locally | Authenticated evaluation, model metadata, and 150 route-engine forecasts | Claim after artifacts are committed and shown in the demo |
-| Tinker | Run completed | Before/after holdout outputs and 12-step loss sequence | Rerun with persistent checkpoint capture before claiming |
+| Tinker | Yes, locally | Model identity, persistent baseline and fine-tuned checkpoints, before/after holdout outputs, and 12-step loss sequence | Claim after the artifact is committed and shown in the demo |
 | Backboard | Not yet | Reproducible benchmark script only | Generate comparison report first |
 | ElevenLabs | Not yet | Voice endpoint and UI control; browser fallback active | Record partner-generated audio first |
 | Temporal | Not yet proven | Workflow, worker, retry policy, endpoint, degraded-mode test | Capture server event history first |
@@ -57,15 +57,14 @@ The remaining execution risk is operational proof: public deployment, a public C
 
 ### Partner technology: broad implementation, narrow proof today
 
-Mastra is proven in the default build, and TabPFN now has an authenticated local run plus route-engine artifacts. Tinker has local before-and-after evidence but still needs persistent checkpoint proof. The remaining partner paths do not earn credit without execution evidence. Activate them in the order in `PARTNER_ACTIVATION.md`; delete every unproven category from the final DEV post.
+Mastra is proven in the default build, while TabPFN and Tinker now have authenticated local runs and inspectable artifacts. The remaining partner paths do not earn credit without execution evidence. Activate them in the order in `PARTNER_ACTIVATION.md`; delete every unproven category from the final DEV post.
 
 ## Remaining risks, in priority order
 
 1. **No public demo or video URL:** required for judging; the public repository is already available.
-2. **Tinker checkpoint proof is incomplete:** rerun the updated script once to record persistent baseline and fine-tuned checkpoint paths.
-3. **Most external partner run artifacts are still absent:** TabPFN and Tinker now have local run evidence, while the remaining integrations still need proof.
-4. **No recorded three-minute demo:** the strongest behavior is easier to understand on video than in prose.
-5. **Live transit uncertainty:** use the labelled scenario as the judging path and demonstrate live mode separately.
+2. **Most external partner run artifacts are still absent:** TabPFN and Tinker have local run evidence, while the remaining integrations still need proof.
+3. **No recorded three-minute demo:** the strongest behavior is easier to understand on video than in prose.
+4. **Live transit uncertainty:** use the labelled scenario as the judging path and demonstrate live mode separately.
 
 ## Release decision
 

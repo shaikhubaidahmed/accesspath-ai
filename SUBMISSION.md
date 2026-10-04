@@ -114,18 +114,18 @@ The training script measures the base model first, performs 12 LoRA supervised u
 - Fine-tuned exact match: **50.0%**
 - Base field accuracy: **0.0%**
 - Fine-tuned field accuracy: **90.0%**
-- Training loss: **1.2858** (step 00) → **0.0207** (step 11)
+- Training loss: **1.2858** (step 00) → **0.0002** (step 11)
 
 The complete 12-step training-loss sequence was:
 
 ```text
-1.2858 → 0.1907 → 0.0862 → 0.0586 → 0.0375 → 0.0322
-       → 0.0222 → 0.0140 → 0.0049 → 0.0014 → 0.0057 → 0.0207
+1.2858 → 0.1938 → 0.0861 → 0.0591 → 0.0380 → 0.0320
+       → 0.0219 → 0.0125 → 0.0042 → 0.0020 → 0.00022 → 0.00019
 ```
 
 This is a four-example holdout: the base model produced no parseable JSON, while the fine-tuned model matched two examples exactly and 18 of 20 individual fields.
 
-The original run did not preserve persistent checkpoint paths, so I am not claiming the Tinker prize category yet. The updated training script records both baseline and fine-tuned checkpoint identities on the next authenticated run.
+The authenticated rerun preserved both baseline and fine-tuned sampler checkpoints under Tinker training model `828027e1-aa15-5721-abd1-eee47c49e1fd:train:0`. Their complete `tinker://` paths, model identity, dependency versions, and holdout outputs are recorded in `training/reports/tinker-evaluation.json`.
 
 That before-and-after result matters more than saying a model was fine-tuned.
 
@@ -185,10 +185,11 @@ I used an AI coding agent to help build the project during the challenge window.
 
 ## Prize Categories
 
-Current qualified category:
+Current qualified categories:
 
 - Best Use of Mastra
 - Best Use of TabPFN
+- Best Use of Tinker
 
 <!-- Add a partner category only after its proof item in docs/partner-evidence.md exists. The prepared targets are Render, TabPFN, Tinker, DigitalOcean, Gemma, Backboard, ElevenLabs, MongoDB Atlas, Sentry Agent Tracing, SerpApi, Temporal, and Tiger Data. -->
 

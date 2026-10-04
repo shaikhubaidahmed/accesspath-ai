@@ -123,7 +123,7 @@ async def main():
     }
     output = ROOT / "training/reports/tinker-evaluation.json"
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(report, indent=2))
+    output.write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps({key: report[key] for key in ("model", "loss", "baseline", "fineTuned")}, indent=2))
 
 

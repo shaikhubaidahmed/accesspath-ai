@@ -29,9 +29,9 @@ This is the proof index for the final submission. **Ready** means an integration
 - **What we built:** a rank-16 LoRA fine-tune for structured accessibility-note extraction plus an OpenAI-compatible inference adapter.
 - **Where it is used:** `training/tinker_finetune.py`, `training/accessibility_examples.jsonl`, and `server/services/gemma.ts`.
 - **Why it matters:** this measures whether specialization improves exact schema extraction over the base model.
-- **Repository evidence:** `training/reports/tinker-evaluation.json` records the 12-step loss sequence and untouched four-example holdout outputs.
+- **Repository evidence:** `training/reports/tinker-evaluation.json` records the model identity, persistent baseline and fine-tuned sampler checkpoint paths, dependency versions, 12-step loss sequence, and untouched four-example holdout outputs.
 - **Result:** exact match improved from 0% to 50%, and field accuracy improved from 0% to 90% (18 of 20 fields).
-- **Status:** authenticated run proven locally; rerun once with the updated script to capture persistent baseline and fine-tuned checkpoint paths before claiming the category.
+- **Status:** proven locally through an authenticated run; public repository and demo evidence remain required for the final submission.
 
 ## Built and awaiting a real partner run
 
