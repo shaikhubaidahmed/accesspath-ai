@@ -1,0 +1,27 @@
+name: accesspath
+region: nyc
+services:
+  - name: web
+    dockerfile_path: Dockerfile
+    github:
+      repo: REPLACE_WITH_OWNER/accesspath
+      branch: main
+      deploy_on_push: true
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    http_port: 8787
+    health_check:
+      http_path: /api/health
+    routes:
+      - path: /
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: DATA_MODE
+        value: live
+      - key: OLLAMA_BASE_URL
+        type: SECRET
+      - key: DIGITALOCEAN_APP_ID
+        type: SECRET

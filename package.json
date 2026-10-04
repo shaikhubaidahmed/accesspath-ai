@@ -1,0 +1,59 @@
+{
+  "name": "accesspath",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An evidence-first accessible journey planner powered by open-source AI.",
+  "scripts": {
+    "dev": "concurrently -k -n web,api -c cyan,orange \"vite --host 127.0.0.1\" \"tsx watch server/index.ts\"",
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "lint": "oxlint src server shared scripts --deny-warnings",
+    "start": "node server-dist/server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.server.json --noEmit",
+    "data:sync": "tsx scripts/sync-data.ts",
+    "benchmark:backboard": "tsx scripts/benchmark-backboard.ts",
+    "temporal:worker": "tsx server/temporal/worker.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@mastra/core": "1.74.0",
+    "@sentry/node": "11.4.0",
+    "@temporalio/client": "1.24.0",
+    "@temporalio/worker": "1.24.0",
+    "@temporalio/workflow": "^1.24.0",
+    "csv-parse": "^7.0.3",
+    "dotenv": "17.2.3",
+    "express": "5.2.1",
+    "fflate": "^0.8.3",
+    "lucide-react": "1.51.0",
+    "mongodb": "7.7.0",
+    "pg": "8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.10.13",
+    "@types/pg": "8.16.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.1.1",
+    "concurrently": "10.0.5",
+    "oxlint": "^1.86.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "@swc/core@1.16.13": true,
+    "protobufjs@8.8.0": true,
+    "protobufjs@7.6.6": true
+  }
+}

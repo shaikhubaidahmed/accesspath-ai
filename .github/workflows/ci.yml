@@ -1,0 +1,57 @@
+name: AccessPath release checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm audit --audit-level=moderate
+      - name: Validate partner scripts
+        run: python -m py_compile ml/train_tabpfn.py training/tinker_finetune.py
+      - name: Smoke-test production server
+        run: |
+          NODE_ENV=production HOST=127.0.0.1 PORT=8787 npm start &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in 1 2 3 4 5; do
+            curl --fail --silent http://127.0.0.1:8787/api/health && break
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:8787/ > /dev/null
+          curl --fail --silent http://127.0.0.1:8787/api/evidence/scenario | grep '"simulated":true'
+
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          tags: accesspath:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

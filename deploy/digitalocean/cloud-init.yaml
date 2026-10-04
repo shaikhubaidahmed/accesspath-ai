@@ -1,0 +1,12 @@
+#cloud-config
+package_update: true
+packages:
+  - docker.io
+runcmd:
+  - systemctl enable --now docker
+  - docker volume create ollama
+  - docker run -d --restart unless-stopped --gpus all -v ollama:/root/.ollama -p 11434:11434 --name accesspath-gemma ollama/ollama:latest
+  - docker exec accesspath-gemma ollama pull gemma3:4b
+
+# Deploy on a DigitalOcean GPU Droplet, restrict TCP 11434 to the AccessPath
+# application network/firewall, and set OLLAMA_BASE_URL to the private address.

@@ -1,0 +1,8 @@
+node_modules
+dist
+server-dist
+.git
+.env
+ml/__pycache__
+training/__pycache__
+**/*.log

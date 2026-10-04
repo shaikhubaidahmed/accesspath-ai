@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-10-03T17:12:53.161Z",
+  "simulated": true,
+  "record": {
+    "station": "Queensboro Plaza",
+    "trainno": "7/N/W",
+    "equipment": "DEMO-EL-QBP-XFER",
+    "equipmenttype": "EL",
+    "serving": "mezzanine between 7 and N/W platforms",
+    "ADA": "Y",
+    "outagedate": "2026-10-03T17:12:53.161Z",
+    "estimatedreturntoservice": "Demonstration only",
+    "reason": "Simulated transfer-lift outage",
+    "isupcomingoutage": "N",
+    "ismaintenanceoutage": "N"
+  }
+}

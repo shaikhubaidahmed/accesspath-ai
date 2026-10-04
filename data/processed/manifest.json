@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-10-03T17:12:53.161Z",
+  "sources": [
+    {
+      "name": "MTA Regular Subway GTFS",
+      "url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip",
+      "license": "MTA terms"
+    },
+    {
+      "name": "MTA Subway Stations",
+      "url": "https://data.ny.gov/d/39hk-dx4f",
+      "license": "Public data"
+    },
+    {
+      "name": "MTA Elevator Equipment",
+      "url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fnyct_ene_equipments.json",
+      "license": "MTA terms"
+    },
+    {
+      "name": "MTA Elevator Outages",
+      "url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fnyct_ene.json",
+      "license": "MTA terms"
+    },
+    {
+      "name": "MTA Equipment Availability",
+      "url": "https://data.ny.gov/d/rc78-7x78",
+      "license": "Public data"
+    }
+  ],
+  "counts": {
+    "stations": 496,
+    "edges": 1302,
+    "equipment": 707,
+    "outages": 60,
+    "reliabilityProfiles": 132
+  }
+}
