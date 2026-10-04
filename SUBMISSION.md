@@ -37,13 +37,13 @@ For the stable judging path:
 
 ## Code
 
-Repository: **[ADD PUBLIC GITHUB REPOSITORY URL]**
+Repository: **https://github.com/shaikhubaidahmed/accesspath-ai**
 
 The repository includes the application, reproducible public-data pipeline, tests, deployment manifests, TabPFN benchmark, Tinker training and evaluation pipeline, and partner activation evidence. The checked-in replay fixture lets judges run the same scenario even if an external service is unavailable.
 
 ```bash
-git clone [ADD REPOSITORY URL]
-cd accesspath
+git clone https://github.com/shaikhubaidahmed/accesspath-ai.git
+cd accesspath-ai
 npm install
 npm run dev
 ```
