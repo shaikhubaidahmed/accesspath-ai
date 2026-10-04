@@ -8,7 +8,7 @@ tags: devchallenge, weekendchallenge, hf26challenge
 
 ## What I Built
 
-An "accessible" journey can stop being accessible because one lift fails between planning and arrival. The usual route card does not tell my friend which piece of infrastructure the trip depends on, how recently it was checked, or what happens when that piece fails.
+An "accessible" journey can stop being accessible because one lift fails between planning and arrival. The usual route card does not tell my sibling which piece of infrastructure the trip depends on, how recently it was checked, or what happens when that piece fails.
 
 I built AccessPath around that gap. It plans step-free NYC Subway journeys, checks the equipment and outage evidence behind them, and prepares another valid route when the first one breaks. The rider's requirements stay fixed while the network changes.
 

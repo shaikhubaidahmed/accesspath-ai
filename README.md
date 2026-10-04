@@ -8,7 +8,7 @@ The working demonstration plans a trip from Grand Central-42 St to Astoria Blvd.
 
 Most route planners treat accessibility as a filter attached to a station. A wheelchair user needs a stronger answer. The station entrance, platform, direction of travel, transfer path, and the equipment serving them all have to work at the same time.
 
-AccessPath was built for a friend who needs that whole chain to be visible before leaving home. It follows three rules:
+AccessPath was built for my sibling, who needs that whole chain to be visible before leaving home. It follows three rules:
 
 - A hard access requirement is never traded for a shorter arrival time.
 - A prediction, simulation, or stale snapshot must be labelled as such.
