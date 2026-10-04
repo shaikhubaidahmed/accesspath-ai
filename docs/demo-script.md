@@ -8,9 +8,7 @@ Target length: **2:45 to 2:55**. Record at 1080p with browser zoom at 100%. Use 
 
 **Say:**
 
-> I built AccessPath for [real relationship and first name, with permission], who [one truthful access need]. A route marked accessible is not enough when one broken transfer lift can end the journey. AccessPath checks every required link, shows the evidence, and prepares a backup without weakening the rider's needs.
-
-Replace the bracketed text before recording. Do not state a medical detail or quote without permission.
+> I built AccessPath for my sibling, who relies on step-free transit. Ordinary route planners do not reliably account for inaccessible transfers or elevator outages, and a single unavailable lift can make the suggested journey unusable. AccessPath checks every required link, shows the evidence, and prepares a backup without weakening the rider's needs.
 
 ## 0:20 to 0:48: define the hard constraint
 
@@ -64,13 +62,11 @@ Delete any sentence whose partner proof is not captured. Show metrics or dashboa
 
 **Say:**
 
-> [First name] said, "[short verified reaction]," after trying it. AccessPath does not promise that infrastructure will stay working. It gives the rider a traceable plan, a backup, and a clearer decision before leaving home. The project, data pipeline, tests, and deployment are open source.
-
-If the friend has not tested it, replace the quote with: "The next validation step is testing this with the friend it was built for." Never invent feedback.
+> AccessPath does not promise that infrastructure will stay working. It gives the rider a traceable plan, a backup, and a clearer decision before leaving home. The project, data pipeline, tests, and deployment are open source.
 
 ## Recording checklist
 
-- [ ] The real friend detail is approved.
+- [x] The sibling relationship and step-free access need are confirmed.
 - [ ] No placeholder text appears on screen or in narration.
 - [ ] Scenario mode is visible before the simulated outage appears.
 - [ ] The simulation badge and timestamp can be read at 1080p.

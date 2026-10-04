@@ -10,9 +10,9 @@ tags: devchallenge, weekendchallenge, hf26challenge
 
 An "accessible" journey can stop being accessible because one lift fails between planning and arrival. The usual route card does not tell my sibling which piece of infrastructure the trip depends on, how recently it was checked, or what happens when that piece fails.
 
-I built AccessPath around that gap. It plans step-free NYC Subway journeys, checks the equipment and outage evidence behind them, and prepares another valid route when the first one breaks. The rider's requirements stay fixed while the network changes.
+My sibling relies on step-free transit, but ordinary route planners do not reliably account for inaccessible transfers or elevator outages. A single unavailable lift can make the suggested journey unusable.
 
-<!-- Before publishing: add 2 to 4 specific sentences about your friend, why this problem affects them, and what they said after trying the demo. Do not invent a quote. You may keep their name private. -->
+I built AccessPath around that gap. It plans step-free NYC Subway journeys, checks the equipment and outage evidence behind them, and prepares another valid route when the first one breaks. The rider's requirements stay fixed while the network changes.
 
 The demonstration starts at Grand Central-42 St and ends at Astoria Blvd. Plan A changes from the 7 to the N at Queensboro Plaza. I then inject a clearly labelled failure of the transfer lift. That single change invalidates Plan A, and AccessPath reruns the graph search. Plan B keeps the step-free constraint and transfers at Times Sq-42 St instead.
 
