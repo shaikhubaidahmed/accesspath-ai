@@ -20,8 +20,8 @@ The interface keeps both plans on screen. It also shows the evidence ledger, cur
 
 ## Demo
 
-- Live app: **Local development only (`http://127.0.0.1:5173`); a public deployment is not available yet.**
-- Three-minute video: **Not recorded yet.**
+- Live app: **[ADD RENDER OR DIGITALOCEAN URL]**
+- Three-minute video: **[ADD VIDEO URL]**
 
 For the stable judging path:
 
@@ -33,17 +33,17 @@ For the stable judging path:
 6. Open Evidence and then Inspect this run.
 7. Play the spoken journey briefing.
 
-The before-and-after route is available in the local Outage demo. A public screenshot has not been added yet.
+<!-- Add a GIF or image of the before/after route here. -->
 
 ## Code
 
-Repository: **[github.com/shaikhubaidahmed/accesspath-ai](https://github.com/shaikhubaidahmed/accesspath-ai)**
+Repository: **[ADD PUBLIC GITHUB REPOSITORY URL]**
 
 The repository includes the application, reproducible public-data pipeline, tests, deployment manifests, TabPFN benchmark, Tinker training and evaluation pipeline, and partner activation evidence. The checked-in replay fixture lets judges run the same scenario even if an external service is unavailable.
 
 ```bash
-git clone https://github.com/shaikhubaidahmed/accesspath-ai.git
-cd accesspath-ai
+git clone [ADD REPOSITORY URL]
+cd accesspath
 npm install
 npm run dev
 ```
@@ -97,7 +97,12 @@ My TabPFN pipeline uses monthly MTA availability and unscheduled-outage history.
 
 I compare TabPFN with a histogram gradient-boosting baseline on balanced accuracy, F1, ROC AUC, and runtime. The real TabPFN run writes station-complex forecasts that the TypeScript route engine loads directly.
 
-An authenticated TabPFN run has not been completed, so I am not claiming model metrics or entry in the TabPFN prize category yet.
+<!-- Replace this table after running ml/train_tabpfn.py. -->
+
+| Model | Balanced accuracy | F1 | ROC AUC |
+| --- | ---: | ---: | ---: |
+| Baseline | [RESULT] | [RESULT] | [RESULT] |
+| TabPFN | [RESULT] | [RESULT] | [RESULT] |
 
 The script refuses to write a `tabpfn` artifact without a real token. A fallback score should not inherit a partner's name.
 
@@ -107,7 +112,12 @@ The Tinker training path fine-tunes Qwen3.5-4B for one narrow task: turn a rider
 
 The training script measures the base model first, performs 12 LoRA supervised updates, and measures the same holdout again. It records exact JSON match, per-field accuracy, loss, and elapsed time.
 
-The Tinker fine-tune has not been run, so I am not claiming before-and-after metrics or entry in the Tinker prize category yet.
+<!-- Replace these values and add the loss curve after running training/tinker_finetune.py. -->
+
+- Base exact match: **[RESULT]**
+- Fine-tuned exact match: **[RESULT]**
+- Base field accuracy: **[RESULT]**
+- Fine-tuned field accuracy: **[RESULT]**
 
 That before-and-after result matters more than saying a model was fine-tuned.
 
@@ -159,7 +169,9 @@ Open innovation gave this project a useful shape: private where the rider speaks
 
 ## My Agent Session
 
-Agent session: **Not published.**
+<!-- Save with DevRelay, then replace this comment with the agent_session embed or link. -->
+
+Agent session: **[ADD DEVRELAY SESSION URL]**
 
 I used an AI coding agent to help build the project during the challenge window. The session shows the data-source checks, route-engine debugging, accessibility review, production smoke test, and the point where a compiled-path bug was found after the development build had already passed.
 
@@ -168,5 +180,7 @@ I used an AI coding agent to help build the project during the challenge window.
 Current qualified category:
 
 - Best Use of Mastra
+
+<!-- Add a partner category only after its proof item in docs/partner-evidence.md exists. The prepared targets are Render, TabPFN, Tinker, DigitalOcean, Gemma, Backboard, ElevenLabs, MongoDB Atlas, Sentry Agent Tracing, SerpApi, Temporal, and Tiger Data. -->
 
 I did not enter the Arduino category because the project has no UNO Q component. I also left out Entire and GitHub Copilot because I did not use them to build AccessPath. The included GitHub Actions pipeline is reproducibility evidence, not a Copilot category claim.
