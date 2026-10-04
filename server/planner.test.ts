@@ -14,6 +14,12 @@ const wheelchairProfile: AccessibilityProfile = {
 };
 
 describe("accessible route planner", () => {
+  it("loads every TabPFN forecast while preserving historical fallbacks", async () => {
+    const store = await loadDataStore();
+    expect(store.reliability.filter((profile) => profile.model === "tabpfn")).toHaveLength(150);
+    expect(store.reliabilityByComplex.get("250")?.model).toBe("historical-baseline");
+  });
+
   it("finds a route whose start and destination satisfy the hard access constraint", async () => {
     const store = await loadDataStore();
     const path = findPath(store, "723", "R03", wheelchairProfile, new Set());

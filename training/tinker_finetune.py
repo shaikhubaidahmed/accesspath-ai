@@ -6,6 +6,8 @@ from __future__ import annotations
 import asyncio
 import json
 import os
+from datetime import datetime, timezone
+from importlib.metadata import version
 from pathlib import Path
 from time import perf_counter
 
@@ -60,15 +62,22 @@ async def main():
     if not os.getenv("TINKER_API_KEY"):
         raise SystemExit("Set TINKER_API_KEY before starting a paid Tinker training run.")
     train_rows, eval_rows = load_examples()
+    run_stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     service = tinker.ServiceClient(user_metadata={"project": "accesspath", "task": "accessibility-constraint-extraction"})
     client = await service.create_lora_training_client_async(base_model=MODEL, rank=16)
+    run_info = await client.get_info_async()
     renderer = get_renderer("qwen3_5", client.get_tokenizer())
     train_data = [
         conversation_to_datum(row["messages"], renderer, max_length=384, train_on_what=TrainOnWhat.LAST_ASSISTANT_MESSAGE)
         for row in train_rows
     ]
 
-    baseline_sampler = await client.save_weights_and_get_sampling_client_async()
+    baseline_future = await client.save_weights_for_sampler_async(
+        name=f"accesspath-baseline-{run_stamp}",
+        user_metadata={"project": "accesspath", "stage": "baseline"},
+    )
+    baseline_checkpoint = await baseline_future.result_async()
+    baseline_sampler = await service.create_sampling_client_async(model_path=baseline_checkpoint.path)
     baseline = await evaluate(baseline_sampler, renderer, eval_rows)
     losses = []
     started = perf_counter()
@@ -83,14 +92,30 @@ async def main():
         losses.append(loss)
         print(f"step={step:02d} loss={loss:.4f}")
 
-    tuned_sampler = await client.save_weights_and_get_sampling_client_async()
+    tuned_future = await client.save_weights_for_sampler_async(
+        name=f"accesspath-fine-tuned-{run_stamp}",
+        user_metadata={"project": "accesspath", "stage": "fine-tuned"},
+    )
+    tuned_checkpoint = await tuned_future.result_async()
+    tuned_sampler = await service.create_sampling_client_async(model_path=tuned_checkpoint.path)
     tuned = await evaluate(tuned_sampler, renderer, eval_rows)
     report = {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
         "model": MODEL,
+        "modelId": run_info.model_id,
         "method": "Tinker LoRA SFT",
         "rank": 16,
         "steps": len(losses),
         "examples": {"train": len(train_rows), "eval": len(eval_rows)},
+        "checkpoints": {
+            "baseline": baseline_checkpoint.path,
+            "fineTuned": tuned_checkpoint.path,
+        },
+        "dependencies": {
+            "numpy": version("numpy"),
+            "tinker": version("tinker"),
+            "tinkerCookbook": version("tinker-cookbook"),
+        },
         "seconds": round(perf_counter() - started, 2),
         "loss": {"first": losses[0], "last": losses[-1], "curve": losses},
         "baseline": baseline,

@@ -13,6 +13,26 @@ This is the proof index for the final submission. **Ready** means an integration
 - **Repository evidence:** `server/workflow.test.ts` verifies all five steps; the UI renders states and durations.
 - **Status:** proven locally. A public URL and source link remain required for submission.
 
+## Partner runs with committed local evidence
+
+### TabPFN: Best Use of TabPFN
+
+- **What we built:** chronological lift-risk forecasting from lagged MTA equipment history, compared with a histogram gradient-boosting baseline.
+- **Where it is used:** `ml/train_tabpfn.py`; generated forecasts are loaded by `server/data-store.ts` and labelled in the evidence ledger.
+- **Why it matters:** two currently working routes may have different historical failure risk.
+- **Repository evidence:** `ml/reports/tabpfn-evaluation.json`, `ml/reports/tabpfn-model.json`, and `data/processed/tabpfn-reliability.json` contain the authenticated run, model identity, and 150 station-complex forecasts.
+- **Result:** TabPFN scored 0.7888 balanced accuracy, 0.8583 F1, and 0.8946 ROC AUC on 3,823 chronological holdout rows.
+- **Status:** proven locally; public repository and demo evidence remain required for the final submission.
+
+### Tinker: Best Use of Tinker
+
+- **What we built:** a rank-16 LoRA fine-tune for structured accessibility-note extraction plus an OpenAI-compatible inference adapter.
+- **Where it is used:** `training/tinker_finetune.py`, `training/accessibility_examples.jsonl`, and `server/services/gemma.ts`.
+- **Why it matters:** this measures whether specialization improves exact schema extraction over the base model.
+- **Repository evidence:** `training/reports/tinker-evaluation.json` records the 12-step loss sequence and untouched four-example holdout outputs.
+- **Result:** exact match improved from 0% to 50%, and field accuracy improved from 0% to 90% (18 of 20 fields).
+- **Status:** authenticated run proven locally; rerun once with the updated script to capture persistent baseline and fine-tuned checkpoint paths before claiming the category.
+
 ## Built and awaiting a real partner run
 
 ### Gemma: Best Use of Gemma
@@ -23,24 +43,6 @@ This is the proof index for the final submission. **Ready** means an integration
 - **Demo path:** set `OLLAMA_BASE_URL`, run a plan, and show `gemma` in the workflow trace.
 - **Evidence required:** screenshot or recording of a validated Gemma run and the exact model name.
 - **Status:** adapter ready; default demo uses deterministic rules.
-
-### TabPFN: Best Use of TabPFN
-
-- **What we built:** chronological lift-risk forecasting from lagged MTA equipment history, compared with a histogram gradient-boosting baseline.
-- **Where it is used:** `ml/train_tabpfn.py`; generated forecasts are loaded by `server/data-store.ts` and labelled in the evidence ledger.
-- **Why it matters:** two currently working routes may have different historical failure risk.
-- **Demo path:** run training with `TABPFN_TOKEN`, commit both generated JSON artifacts, then plan a route through a scored complex.
-- **Evidence required:** holdout row count, balanced accuracy, F1, ROC AUC, runtime, baseline comparison, and generated artifact.
-- **Status:** pipeline ready; no TabPFN result is claimed until the artifacts exist.
-
-### Tinker: Best Use of Tinker
-
-- **What we built:** a rank-16 LoRA fine-tune for structured accessibility-note extraction plus an OpenAI-compatible inference adapter.
-- **Where it is used:** `training/tinker_finetune.py`, `training/accessibility_examples.jsonl`, and `server/services/gemma.ts`.
-- **Why it matters:** this measures whether specialization improves exact schema extraction over the base model.
-- **Demo path:** run training with `TINKER_API_KEY`, deploy the saved adapter, set `TINKER_INFERENCE_URL` and `TINKER_MODEL`, then show a `tinker` interpretation trace.
-- **Evidence required:** baseline versus tuned exact match and field accuracy on the untouched holdout, plus saved model identity.
-- **Status:** training and runtime paths ready; no paid training run is claimed.
 
 ### Backboard: Best Use of Backboard
 

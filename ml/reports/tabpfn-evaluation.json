@@ -1,0 +1,36 @@
+{
+  "source": "https://data.ny.gov/resource/rc78-7x78.json",
+  "generatedAt": "2026-10-04T21:15:37.847704+00:00",
+  "split": {
+    "kind": "chronological",
+    "cutoff": "2024-05-01T00:00:00+00:00"
+  },
+  "rows": {
+    "train": 12884,
+    "test": 3823
+  },
+  "baseline": {
+    "balanced_accuracy": 0.7878,
+    "f1": 0.8574,
+    "roc_auc": 0.8908
+  },
+  "tabpfn": {
+    "balanced_accuracy": 0.7888,
+    "f1": 0.8583,
+    "roc_auc": 0.8946
+  },
+  "timings": {
+    "fit": {
+      "elapsed_s": 9.569,
+      "queue_wait_s": 1.26,
+      "train_set_transform_s": 4.463,
+      "fit_s": 3.846
+    },
+    "predict": {
+      "test_set_transform_queue_wait_s": 0.093,
+      "test_set_transform_s": 0.802,
+      "predict_queue_wait_s": 0.099,
+      "predict_s": 0.261
+    }
+  }
+}

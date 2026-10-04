@@ -1,0 +1,161 @@
+{
+  "generatedAt": "2026-10-04T22:08:10Z",
+  "model": "Qwen/Qwen3.5-4B",
+  "method": "Tinker LoRA SFT",
+  "rank": 16,
+  "steps": 12,
+  "dependencies": {
+    "numpy": "2.4.6",
+    "tinker": "0.32.0",
+    "tinkerCookbook": "0.5.7"
+  },
+  "checkpoints": null,
+  "checkpointNote": "The original run did not capture persistent checkpoint paths. Rerun training/tinker_finetune.py to generate them with the updated script.",
+  "examples": {
+    "train": 12,
+    "eval": 4
+  },
+  "seconds": 59.6,
+  "loss": {
+    "first": 1.2858274210270941,
+    "last": 0.020742922077466114,
+    "curve": [
+      1.2858274210270941,
+      0.19071754536565808,
+      0.08619512198683146,
+      0.05857398625420274,
+      0.037543183636633434,
+      0.03224263776635515,
+      0.022172070622063972,
+      0.013958797506099034,
+      0.004908706197179183,
+      0.0013935328238129656,
+      0.005717511344462192,
+      0.020742922077466114
+    ]
+  },
+  "baseline": {
+    "exactMatch": 0.0,
+    "fieldAccuracy": 0.0,
+    "outputs": [
+      {
+        "note": "My cane and knee pain make stairs impossible. Eight minutes is enough walking.",
+        "expected": {
+          "stepFree": true,
+          "avoidLongWalks": true,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 8
+        },
+        "actual": null
+      },
+      {
+        "note": "I need a calm route and an accessible toilet; stairs are not a problem.",
+        "expected": {
+          "stepFree": false,
+          "avoidLongWalks": false,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": true,
+          "maximumWalkMinutes": 12
+        },
+        "actual": null
+      },
+      {
+        "note": "Wheelchair route please. Longer distances are fine and crowds do not bother me.",
+        "expected": {
+          "stepFree": true,
+          "avoidLongWalks": false,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 20
+        },
+        "actual": null
+      },
+      {
+        "note": "Limit walking to six minutes. I can take stairs but avoid busy concourses.",
+        "expected": {
+          "stepFree": false,
+          "avoidLongWalks": true,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 6
+        },
+        "actual": null
+      }
+    ]
+  },
+  "fineTuned": {
+    "exactMatch": 0.5,
+    "fieldAccuracy": 0.9,
+    "outputs": [
+      {
+        "note": "My cane and knee pain make stairs impossible. Eight minutes is enough walking.",
+        "expected": {
+          "stepFree": true,
+          "avoidLongWalks": true,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 8
+        },
+        "actual": {
+          "stepFree": true,
+          "avoidLongWalks": true,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 8
+        }
+      },
+      {
+        "note": "I need a calm route and an accessible toilet; stairs are not a problem.",
+        "expected": {
+          "stepFree": false,
+          "avoidLongWalks": false,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": true,
+          "maximumWalkMinutes": 12
+        },
+        "actual": {
+          "stepFree": false,
+          "avoidLongWalks": true,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": true,
+          "maximumWalkMinutes": 12
+        }
+      },
+      {
+        "note": "Wheelchair route please. Longer distances are fine and crowds do not bother me.",
+        "expected": {
+          "stepFree": true,
+          "avoidLongWalks": false,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 20
+        },
+        "actual": {
+          "stepFree": true,
+          "avoidLongWalks": false,
+          "avoidCrowds": false,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 12
+        }
+      },
+      {
+        "note": "Limit walking to six minutes. I can take stairs but avoid busy concourses.",
+        "expected": {
+          "stepFree": false,
+          "avoidLongWalks": true,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 6
+        },
+        "actual": {
+          "stepFree": false,
+          "avoidLongWalks": true,
+          "avoidCrowds": true,
+          "needsAccessibleToilet": false,
+          "maximumWalkMinutes": 6
+        }
+      }
+    ]
+  }
+}

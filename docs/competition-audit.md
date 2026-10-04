@@ -8,8 +8,8 @@ This audit answers a stricter question than “does adapter code exist?”: can 
 | --- | --- | --- | --- |
 | Mastra | Yes | Five-step runtime trace, source, and passing tests | Claim after public deployment |
 | Gemma | Not yet proven | Ollama adapter and private deployment manifest | Run Gemma and capture trace first |
-| TabPFN | Not yet | Training/evaluation pipeline only | Generate and commit real artifacts first |
-| Tinker | Not yet | Fine-tune script, dataset, validated inference path | Run training, evaluate holdout, deploy adapter first |
+| TabPFN | Yes, locally | Authenticated evaluation, model metadata, and 150 route-engine forecasts | Claim after artifacts are committed and shown in the demo |
+| Tinker | Run completed | Before/after holdout outputs and 12-step loss sequence | Rerun with persistent checkpoint capture before claiming |
 | Backboard | Not yet | Reproducible benchmark script only | Generate comparison report first |
 | ElevenLabs | Not yet | Voice endpoint and UI control; browser fallback active | Record partner-generated audio first |
 | Temporal | Not yet proven | Workflow, worker, retry policy, endpoint, degraded-mode test | Capture server event history first |
@@ -27,9 +27,9 @@ This audit answers a stricter question than “does adapter code exist?”: can 
 
 ## Judge simulation
 
-### Writing quality: strongest current asset, final personal detail missing
+### Writing quality: strongest current asset
 
-The submission has a clear problem, a concrete incident, safety boundaries, and an understandable technical story. Its weakest sentence is the still-generic phrase "built for a friend." Before publishing, replace the placeholder with the real relationship, access need, and one verified reaction. Do not invent a quote or diagnosis.
+The submission has a clear problem, safety boundaries, and an understandable technical story. The confirmed sibling relationship and step-free access need are included without publishing a name, diagnosis, or unverified reaction.
 
 ### Prompt and theme relevance: strong
 
@@ -48,7 +48,7 @@ Current local gate:
 - 707 equipment records;
 - 60 outage records in the synchronized snapshot;
 - 132 historical reliability profiles;
-- 10 automated tests across four test files;
+- 11 automated tests across four test files;
 - TypeScript client and server checks pass;
 - production build passes;
 - dependency audit reports no known vulnerabilities.
@@ -57,13 +57,13 @@ The remaining execution risk is operational proof: public deployment, a public C
 
 ### Partner technology: broad implementation, narrow proof today
 
-Mastra is the only prize integration currently proven in the default build. The repository has meaningful paths for the other partners, but breadth does not earn credit without execution evidence. Activate partners in the order in `PARTNER_ACTIVATION.md`; delete every unproven category from the final DEV post.
+Mastra is proven in the default build, and TabPFN now has an authenticated local run plus route-engine artifacts. Tinker has local before-and-after evidence but still needs persistent checkpoint proof. The remaining partner paths do not earn credit without execution evidence. Activate them in the order in `PARTNER_ACTIVATION.md`; delete every unproven category from the final DEV post.
 
 ## Remaining risks, in priority order
 
-1. **No real friend detail:** required to make the theme emotionally credible.
-2. **No public demo/repository/video URLs:** required for judging.
-3. **No external partner run artifacts:** limits partner-category eligibility.
+1. **No public demo or video URL:** required for judging; the public repository is already available.
+2. **Tinker checkpoint proof is incomplete:** rerun the updated script once to record persistent baseline and fine-tuned checkpoint paths.
+3. **Most external partner run artifacts are still absent:** TabPFN and Tinker now have local run evidence, while the remaining integrations still need proof.
 4. **No recorded three-minute demo:** the strongest behavior is easier to understand on video than in prose.
 5. **Live transit uncertainty:** use the labelled scenario as the judging path and demonstrate live mode separately.
 

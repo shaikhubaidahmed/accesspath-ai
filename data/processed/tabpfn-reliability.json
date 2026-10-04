@@ -1,0 +1,1502 @@
+[
+  {
+    "complexId": "456",
+    "stationName": "61 St-Woodside - Station",
+    "historicalAvailability": 0.9567141344003766,
+    "meanMonthlyUnscheduledOutages": 2.0,
+    "risk": "moderate",
+    "riskProbability": 0.36432,
+    "model": "tabpfn",
+    "asOf": "2024-09-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "42",
+    "stationName": "Prospect Park - Station",
+    "historicalAvailability": 1.0,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.12948,
+    "model": "tabpfn",
+    "asOf": "2025-12-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "313",
+    "stationName": "72 St - Station",
+    "historicalAvailability": 0.9909702754833326,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "low",
+    "riskProbability": 0.20949,
+    "model": "tabpfn",
+    "asOf": "2025-12-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "283",
+    "stationName": "Greenpoint Av - Station",
+    "historicalAvailability": 0.9911140979689367,
+    "meanMonthlyUnscheduledOutages": 2.0,
+    "risk": "low",
+    "riskProbability": 0.22452,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "280",
+    "stationName": "Jamaica Van Wyck - Station",
+    "historicalAvailability": 0.9663274449564773,
+    "meanMonthlyUnscheduledOutages": 19.0,
+    "risk": "elevated",
+    "riskProbability": 0.99809,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "305",
+    "stationName": "137 St-City College - Station",
+    "historicalAvailability": 0.963239247311828,
+    "meanMonthlyUnscheduledOutages": 4.333333333333333,
+    "risk": "moderate",
+    "riskProbability": 0.60576,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "392",
+    "stationName": "125 St - Station",
+    "historicalAvailability": 0.9677083333333334,
+    "meanMonthlyUnscheduledOutages": 7.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.87201,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "371",
+    "stationName": "Hunts Point Av - Station",
+    "historicalAvailability": 0.9826015531660693,
+    "meanMonthlyUnscheduledOutages": 5.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.75734,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "382",
+    "stationName": "Fordham Rd - Station",
+    "historicalAvailability": 0.9873655913978495,
+    "meanMonthlyUnscheduledOutages": 6.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.72339,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "379",
+    "stationName": "Mosholu Pkwy - Station",
+    "historicalAvailability": 0.9836133512544804,
+    "meanMonthlyUnscheduledOutages": 3.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.45879,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "301",
+    "stationName": "181 St - Station",
+    "historicalAvailability": 0.9589661738351255,
+    "meanMonthlyUnscheduledOutages": 16.0,
+    "risk": "elevated",
+    "riskProbability": 0.98339,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "222",
+    "stationName": "Roosevelt Island - Station",
+    "historicalAvailability": 0.9647513440860215,
+    "meanMonthlyUnscheduledOutages": 37.0,
+    "risk": "elevated",
+    "riskProbability": 0.99992,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "373",
+    "stationName": "E 149 St - Station",
+    "historicalAvailability": 0.98769041218638,
+    "meanMonthlyUnscheduledOutages": 3.6666666666666665,
+    "risk": "moderate",
+    "riskProbability": 0.52574,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "300",
+    "stationName": "191 St - Station",
+    "historicalAvailability": 0.9235943100358422,
+    "meanMonthlyUnscheduledOutages": 11.666666666666666,
+    "risk": "elevated",
+    "riskProbability": 0.97205,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "387",
+    "stationName": "170 St - Station",
+    "historicalAvailability": 0.9925029868578256,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "elevated",
+    "riskProbability": 0.65505,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "299",
+    "stationName": "Dyckman St - Station",
+    "historicalAvailability": 0.985752688172043,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "low",
+    "riskProbability": 0.34208,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "221",
+    "stationName": "21 St-Queensbridge - Station",
+    "historicalAvailability": 0.9734863031233999,
+    "meanMonthlyUnscheduledOutages": 26.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99941,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "259",
+    "stationName": "Kew Gardens-Union Tpke - Station",
+    "historicalAvailability": 0.9910020908004779,
+    "meanMonthlyUnscheduledOutages": 2.6666666666666665,
+    "risk": "low",
+    "riskProbability": 0.31799,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "223",
+    "stationName": "Lexington Av/63 St - Station",
+    "historicalAvailability": 0.97982664736697,
+    "meanMonthlyUnscheduledOutages": 70.33333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.99992,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "333",
+    "stationName": "Wall St - Station",
+    "historicalAvailability": 1.0,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.05352,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "258",
+    "stationName": "Briarwood - Station",
+    "historicalAvailability": 0.9926075268817204,
+    "meanMonthlyUnscheduledOutages": 0.6666666666666666,
+    "risk": "low",
+    "riskProbability": 0.15415,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "328",
+    "stationName": "Cortlandt St - Station",
+    "historicalAvailability": 0.9964101702508961,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "moderate",
+    "riskProbability": 0.42318,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "327",
+    "stationName": "Chambers St - Station",
+    "historicalAvailability": 0.9909423536439665,
+    "meanMonthlyUnscheduledOutages": 2.6666666666666665,
+    "risk": "low",
+    "riskProbability": 0.30192,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "334",
+    "stationName": "Clark St - Station",
+    "historicalAvailability": 0.9817577977340448,
+    "meanMonthlyUnscheduledOutages": 8.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.86408,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "336",
+    "stationName": "Hoyt St - Station",
+    "historicalAvailability": 0.9969758064516129,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.24753,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "261",
+    "stationName": "Forest Hills-71 Av - Station",
+    "historicalAvailability": 0.9862455197132617,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "moderate",
+    "riskProbability": 0.54057,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "341",
+    "stationName": "Eastern Pkwy-Brooklyn Museum - Station",
+    "historicalAvailability": 0.9821908602150538,
+    "meanMonthlyUnscheduledOutages": 1.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.20013,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "254",
+    "stationName": "Jamaica-179 St - Station",
+    "historicalAvailability": 1.0,
+    "meanMonthlyUnscheduledOutages": 6.666666666666667,
+    "risk": "moderate",
+    "riskProbability": 0.61507,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "269",
+    "stationName": "Northern Blvd - Station",
+    "historicalAvailability": 0.9962141577060932,
+    "meanMonthlyUnscheduledOutages": 1.0,
+    "risk": "low",
+    "riskProbability": 0.10621,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "318",
+    "stationName": "34 St-Penn Station - Station",
+    "historicalAvailability": 0.9875224014336917,
+    "meanMonthlyUnscheduledOutages": 4.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.71462,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "345",
+    "stationName": "Crown Hts-Utica Av - Station",
+    "historicalAvailability": 0.9902665770609319,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.43465,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "243",
+    "stationName": "Church Av - Station",
+    "historicalAvailability": 0.9926821983273596,
+    "meanMonthlyUnscheduledOutages": 1.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.30886,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "273",
+    "stationName": "Queens Plaza - Station",
+    "historicalAvailability": 0.9912933094384707,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.38426,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "353",
+    "stationName": "President St-Medgar Evers College - Station",
+    "historicalAvailability": 0.9849462365591398,
+    "meanMonthlyUnscheduledOutages": 7.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.889,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "240",
+    "stationName": "7 Av - Station",
+    "historicalAvailability": 0.9703031660692951,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "low",
+    "riskProbability": 0.26488,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "314",
+    "stationName": "66 St-Lincoln Center - Station",
+    "historicalAvailability": 0.9985775089605734,
+    "meanMonthlyUnscheduledOutages": 0.6666666666666666,
+    "risk": "low",
+    "riskProbability": 0.18341,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "224",
+    "stationName": "57 St - Station",
+    "historicalAvailability": 0.991185035842294,
+    "meanMonthlyUnscheduledOutages": 1.0,
+    "risk": "low",
+    "riskProbability": 0.1774,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "366",
+    "stationName": "Parkchester - Station",
+    "historicalAvailability": 0.9936379928315412,
+    "meanMonthlyUnscheduledOutages": 9.0,
+    "risk": "elevated",
+    "riskProbability": 0.8808,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "306",
+    "stationName": "125 St - Station",
+    "historicalAvailability": 0.9451388888888889,
+    "meanMonthlyUnscheduledOutages": 25.0,
+    "risk": "elevated",
+    "riskProbability": 0.99582,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "225",
+    "stationName": "47-50 Sts-Rockefeller Ctr - Station",
+    "historicalAvailability": 0.988231780167264,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "moderate",
+    "riskProbability": 0.58937,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "278",
+    "stationName": "Jamaica Center-Parsons/Archer - Station",
+    "historicalAvailability": 0.9806146138807429,
+    "meanMonthlyUnscheduledOutages": 56.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99995,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "363",
+    "stationName": "Westchester Sq-East Tremont Av - Station",
+    "historicalAvailability": 0.9945639187574672,
+    "meanMonthlyUnscheduledOutages": 2.0,
+    "risk": "moderate",
+    "riskProbability": 0.48148,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "279",
+    "stationName": "Sutphin Blvd-Archer Av-JFK Airport - Station",
+    "historicalAvailability": 0.9063060035842294,
+    "meanMonthlyUnscheduledOutages": 34.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99864,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "360",
+    "stationName": "Pelham Bay Park - Station",
+    "historicalAvailability": 0.9778617831541219,
+    "meanMonthlyUnscheduledOutages": 11.0,
+    "risk": "elevated",
+    "riskProbability": 0.97761,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "234",
+    "stationName": "East Broadway - Station",
+    "historicalAvailability": 0.9797267025089605,
+    "meanMonthlyUnscheduledOutages": 3.6666666666666665,
+    "risk": "moderate",
+    "riskProbability": 0.53348,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "277",
+    "stationName": "7 Av - Station",
+    "historicalAvailability": 0.9536962365591398,
+    "meanMonthlyUnscheduledOutages": 7.0,
+    "risk": "elevated",
+    "riskProbability": 0.86047,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "359",
+    "stationName": "Flatbush Av-Brooklyn College - Station",
+    "historicalAvailability": 0.9664426523297491,
+    "meanMonthlyUnscheduledOutages": 0.6666666666666666,
+    "risk": "low",
+    "riskProbability": 0.22242,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "276",
+    "stationName": "5 Av/53 St - Station",
+    "historicalAvailability": 0.9730136915257754,
+    "meanMonthlyUnscheduledOutages": 14.0,
+    "risk": "elevated",
+    "riskProbability": 0.99273,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "238",
+    "stationName": "Smith-9 Sts - Station",
+    "historicalAvailability": 0.978035394265233,
+    "meanMonthlyUnscheduledOutages": 10.0,
+    "risk": "elevated",
+    "riskProbability": 0.97433,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "356",
+    "stationName": "Church Av - Station",
+    "historicalAvailability": 0.9858646953405018,
+    "meanMonthlyUnscheduledOutages": 2.6666666666666665,
+    "risk": "low",
+    "riskProbability": 0.34074,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "310",
+    "stationName": "96 St - Station",
+    "historicalAvailability": 0.9906810035842294,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.40819,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "9",
+    "stationName": "57 St-7 Av - Station",
+    "historicalAvailability": 0.9933299731182795,
+    "meanMonthlyUnscheduledOutages": 4.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.65257,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "181",
+    "stationName": "Utica Av - Station",
+    "historicalAvailability": 0.9859543010752688,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "elevated",
+    "riskProbability": 0.7351,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "399",
+    "stationName": "68 St-Hunter College - Station",
+    "historicalAvailability": 0.9954301075268817,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "low",
+    "riskProbability": 0.32412,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "616",
+    "stationName": "74-Broadway (7)/Jackson Hts-Roosevelt Av (E,F,M,R)",
+    "historicalAvailability": 0.9842343687773795,
+    "meanMonthlyUnscheduledOutages": 37.0,
+    "risk": "elevated",
+    "riskProbability": 0.99989,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "71",
+    "stationName": "8th Ave - Station",
+    "historicalAvailability": 0.9896953405017922,
+    "meanMonthlyUnscheduledOutages": 1.6666666666666667,
+    "risk": "low",
+    "riskProbability": 0.20024,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "83",
+    "stationName": "Woodhaven Blvd - Station",
+    "historicalAvailability": 0.9919914874551972,
+    "meanMonthlyUnscheduledOutages": 4.0,
+    "risk": "moderate",
+    "riskProbability": 0.37217,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "615",
+    "stationName": "New Utrecht Av (N)/62 St (D)",
+    "historicalAvailability": 0.9912858422939068,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "moderate",
+    "riskProbability": 0.40861,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "614",
+    "stationName": "59 St-Columbus Circle (A,B,C,D,1)",
+    "historicalAvailability": 0.7741739471326164,
+    "meanMonthlyUnscheduledOutages": 8.0,
+    "risk": "elevated",
+    "riskProbability": 0.95595,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "98",
+    "stationName": "Flushing Av - Station",
+    "historicalAvailability": 0.9927867383512545,
+    "meanMonthlyUnscheduledOutages": 10.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.91903,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "613",
+    "stationName": "Lexington Av (N,Q,R)/59 St (4,5,6)",
+    "historicalAvailability": 0.9620167690732206,
+    "meanMonthlyUnscheduledOutages": 41.333333333333336,
+    "risk": "elevated",
+    "riskProbability": 0.99977,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "101",
+    "stationName": "Marcy Av - Station",
+    "historicalAvailability": 0.987589605734767,
+    "meanMonthlyUnscheduledOutages": 5.0,
+    "risk": "elevated",
+    "riskProbability": 0.82811,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "612",
+    "stationName": "Lexington Av-53 St (E,M)/51 St (6)",
+    "historicalAvailability": 0.9615124701314217,
+    "meanMonthlyUnscheduledOutages": 29.0,
+    "risk": "elevated",
+    "riskProbability": 0.99903,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "68",
+    "stationName": "Bay Pkwy - Station",
+    "historicalAvailability": 0.9884707287933094,
+    "meanMonthlyUnscheduledOutages": 4.666666666666667,
+    "risk": "moderate",
+    "riskProbability": 0.52681,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "103",
+    "stationName": "Bowery - Station",
+    "historicalAvailability": 0.960103046594982,
+    "meanMonthlyUnscheduledOutages": 8.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.82013,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "119",
+    "stationName": "1 Av - Station",
+    "historicalAvailability": 0.9819108422939068,
+    "meanMonthlyUnscheduledOutages": 7.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.7456,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "2",
+    "stationName": "Astoria Blvd - Station",
+    "historicalAvailability": 0.9903449820788531,
+    "meanMonthlyUnscheduledOutages": 6.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.72186,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "610",
+    "stationName": "Grand Central-42 St (S,4,5,6,7)",
+    "historicalAvailability": 0.9809569722718738,
+    "meanMonthlyUnscheduledOutages": 73.33333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.99994,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "120",
+    "stationName": "Bedford Av - Station",
+    "historicalAvailability": 0.9701500896057348,
+    "meanMonthlyUnscheduledOutages": 1.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.15769,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "123",
+    "stationName": "Grand St - Station",
+    "historicalAvailability": 0.9888552867383512,
+    "meanMonthlyUnscheduledOutages": 2.6666666666666665,
+    "risk": "low",
+    "riskProbability": 0.22782,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "609",
+    "stationName": "42 St-Bryant Pk (B,D,F,M)/5 Av (7)",
+    "historicalAvailability": 0.864336917562724,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "moderate",
+    "riskProbability": 0.4232,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "135",
+    "stationName": "Livonia Av - Station",
+    "historicalAvailability": 0.9812163978494624,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.37954,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "607",
+    "stationName": "34 St-Herald Sq (B,D,F,M,N,Q,R)",
+    "historicalAvailability": 0.9657581640780566,
+    "meanMonthlyUnscheduledOutages": 103.0,
+    "risk": "elevated",
+    "riskProbability": 0.99995,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "143",
+    "stationName": "Inwood-207 St - Station",
+    "historicalAvailability": 0.9801971326164874,
+    "meanMonthlyUnscheduledOutages": 0.6666666666666666,
+    "risk": "low",
+    "riskProbability": 0.18878,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "611",
+    "stationName": "Times Sq-42 St (N,Q,R,S,1,2,3,7)/42 St (A,C,E)",
+    "historicalAvailability": 0.8802620967741935,
+    "meanMonthlyUnscheduledOutages": 35.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99992,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "617",
+    "stationName": "Atlantic Av (B,Q,2,3,4,5)/Pacific St (D,N,R)",
+    "historicalAvailability": 0.9770036837913182,
+    "meanMonthlyUnscheduledOutages": 21.0,
+    "risk": "elevated",
+    "riskProbability": 0.99765,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "58",
+    "stationName": "Coney Island-Stillwell Av - Station",
+    "historicalAvailability": 0.9963037634408602,
+    "meanMonthlyUnscheduledOutages": 0.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.14965,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "618",
+    "stationName": "14 St (A,C,E)/8 Av (L)",
+    "historicalAvailability": 0.9945676523297491,
+    "meanMonthlyUnscheduledOutages": 12.0,
+    "risk": "elevated",
+    "riskProbability": 0.92826,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "629",
+    "stationName": "Metropolitan Av (G)/Lorimer St (L)",
+    "historicalAvailability": 0.9785580943847073,
+    "meanMonthlyUnscheduledOutages": 9.0,
+    "risk": "elevated",
+    "riskProbability": 0.84198,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "628",
+    "stationName": "Fulton St (A,C,J,Z,2,3,4,5)",
+    "historicalAvailability": 0.9848743652927121,
+    "meanMonthlyUnscheduledOutages": 39.0,
+    "risk": "elevated",
+    "riskProbability": 0.99982,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "10",
+    "stationName": "49 St - Station",
+    "historicalAvailability": 0.9988799283154122,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.04777,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "627",
+    "stationName": "Franklin Av (C,S)",
+    "historicalAvailability": 0.97096027479092,
+    "meanMonthlyUnscheduledOutages": 9.666666666666666,
+    "risk": "elevated",
+    "riskProbability": 0.94795,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "630",
+    "stationName": "Myrtle-Wyckoff Avs (L,M)",
+    "historicalAvailability": 0.9728584229390681,
+    "meanMonthlyUnscheduledOutages": 27.333333333333332,
+    "risk": "elevated",
+    "riskProbability": 0.99958,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "26",
+    "stationName": "DeKalb Av - Station",
+    "historicalAvailability": 0.990663082437276,
+    "meanMonthlyUnscheduledOutages": 8.0,
+    "risk": "elevated",
+    "riskProbability": 0.96772,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "625",
+    "stationName": "Delancey St (F)/Essex St (J,M,Z)",
+    "historicalAvailability": 0.9625224014336917,
+    "meanMonthlyUnscheduledOutages": 21.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99813,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "35",
+    "stationName": "59 St - Station",
+    "historicalAvailability": 0.9889859617682198,
+    "meanMonthlyUnscheduledOutages": 1.6666666666666667,
+    "risk": "low",
+    "riskProbability": 0.32253,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "624",
+    "stationName": "Chambers St (A,C)/WTC (E)/Park Place (2,3)/Cortlandt St (R, W)",
+    "historicalAvailability": 0.9397808732486151,
+    "meanMonthlyUnscheduledOutages": 5.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.90057,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "38",
+    "stationName": "86 St - Station",
+    "historicalAvailability": 0.9880264336917562,
+    "meanMonthlyUnscheduledOutages": 1.0,
+    "risk": "low",
+    "riskProbability": 0.17173,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "39",
+    "stationName": "Bay Ridge-95 St - Station",
+    "historicalAvailability": 0.9979166666666667,
+    "meanMonthlyUnscheduledOutages": 1.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.1829,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "623",
+    "stationName": "Canal St (J,N,Q,R,Z,6)",
+    "historicalAvailability": 0.9847894265232975,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "moderate",
+    "riskProbability": 0.57791,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "44",
+    "stationName": "Church Av - Station",
+    "historicalAvailability": 0.8620519713261648,
+    "meanMonthlyUnscheduledOutages": 3.3333333333333335,
+    "risk": "low",
+    "riskProbability": 0.32705,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "622",
+    "stationName": "Brooklyn Bridge-City Hall (4,5,6)/Chambers St (J,Z)",
+    "historicalAvailability": 0.9906137992831541,
+    "meanMonthlyUnscheduledOutages": 5.0,
+    "risk": "elevated",
+    "riskProbability": 0.75552,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "51",
+    "stationName": "Kings Hwy - Station",
+    "historicalAvailability": 0.9896057347670251,
+    "meanMonthlyUnscheduledOutages": 4.333333333333333,
+    "risk": "moderate",
+    "riskProbability": 0.48378,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "54",
+    "stationName": "Sheepshead Bay - Station",
+    "historicalAvailability": 0.9258848566308243,
+    "meanMonthlyUnscheduledOutages": 3.6666666666666665,
+    "risk": "moderate",
+    "riskProbability": 0.52325,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "621",
+    "stationName": "Broadway Junction (A,C,J,L,Z)",
+    "historicalAvailability": 0.9820340501792114,
+    "meanMonthlyUnscheduledOutages": 23.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99929,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "620",
+    "stationName": "Court St (R)/Borough Hall (2,3,4,5)",
+    "historicalAvailability": 0.9710170250896057,
+    "meanMonthlyUnscheduledOutages": 21.333333333333332,
+    "risk": "elevated",
+    "riskProbability": 0.99976,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "55",
+    "stationName": "Brighton Beach - Station",
+    "historicalAvailability": 0.9239695340501792,
+    "meanMonthlyUnscheduledOutages": 22.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99677,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "619",
+    "stationName": "Broadway-Lafayette St (B,D,F,M)/Bleecker St (6)",
+    "historicalAvailability": 0.9787559737156512,
+    "meanMonthlyUnscheduledOutages": 17.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99379,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "57",
+    "stationName": "West 8 St-NY Aquarium - Station",
+    "historicalAvailability": 0.9153001792114696,
+    "meanMonthlyUnscheduledOutages": 13.666666666666666,
+    "risk": "elevated",
+    "riskProbability": 0.97841,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "606",
+    "stationName": "Court Sq (E,G,M,7)",
+    "historicalAvailability": 0.6403673835125449,
+    "meanMonthlyUnscheduledOutages": 6.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.85719,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "397",
+    "stationName": "86 St - Station",
+    "historicalAvailability": 0.9807571684587814,
+    "meanMonthlyUnscheduledOutages": 7.0,
+    "risk": "moderate",
+    "riskProbability": 0.63027,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "145",
+    "stationName": "190 St - Station",
+    "historicalAvailability": 0.9705495818399045,
+    "meanMonthlyUnscheduledOutages": 5.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.73297,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "146",
+    "stationName": "181 St - Station",
+    "historicalAvailability": 0.9630460349462365,
+    "meanMonthlyUnscheduledOutages": 20.0,
+    "risk": "elevated",
+    "riskProbability": 0.99172,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "635",
+    "stationName": "South Ferry (1)/Whitehall St (R)",
+    "historicalAvailability": 0.9789221176821983,
+    "meanMonthlyUnscheduledOutages": 63.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99994,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "192",
+    "stationName": "Rockaway Blvd - Station",
+    "historicalAvailability": 0.9813732078853046,
+    "meanMonthlyUnscheduledOutages": 1.0,
+    "risk": "low",
+    "riskProbability": 0.26166,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "430",
+    "stationName": "Simpson St - Station",
+    "historicalAvailability": 0.9724014336917562,
+    "meanMonthlyUnscheduledOutages": 9.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.94077,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "195",
+    "stationName": "Ozone Park-Lefferts Blvd - Station",
+    "historicalAvailability": 0.9893257168458781,
+    "meanMonthlyUnscheduledOutages": 3.6666666666666665,
+    "risk": "moderate",
+    "riskProbability": 0.51546,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "427",
+    "stationName": "West Farms Sq-E Tremont Av - Station",
+    "historicalAvailability": 0.9603046594982079,
+    "meanMonthlyUnscheduledOutages": 17.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.89879,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "196",
+    "stationName": "Aqueduct-Racetrack - Station",
+    "historicalAvailability": 0.9977598566308243,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.25738,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "426",
+    "stationName": "E 180 St - Station",
+    "historicalAvailability": 0.9902889784946236,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "low",
+    "riskProbability": 0.26925,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "198",
+    "stationName": "Howard Beach-JFK Airport - Station",
+    "historicalAvailability": 0.9969108422939068,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.06664,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "424",
+    "stationName": "Pelham Pkwy - Station",
+    "historicalAvailability": 0.9837455197132616,
+    "meanMonthlyUnscheduledOutages": 7.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.94144,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "188",
+    "stationName": "Euclid Av - Station",
+    "historicalAvailability": 0.9392025089605734,
+    "meanMonthlyUnscheduledOutages": 6.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.79404,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "204",
+    "stationName": "Beach 67 St - Station",
+    "historicalAvailability": 0.9963149641577062,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "low",
+    "riskProbability": 0.27997,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "209",
+    "stationName": "Far Rockaway-Mott Av - Station",
+    "historicalAvailability": 0.9869959677419355,
+    "meanMonthlyUnscheduledOutages": 4.666666666666667,
+    "risk": "moderate",
+    "riskProbability": 0.41519,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "418",
+    "stationName": "233 St - Station",
+    "historicalAvailability": 0.9913082437275986,
+    "meanMonthlyUnscheduledOutages": 6.666666666666667,
+    "risk": "elevated",
+    "riskProbability": 0.66831,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "210",
+    "stationName": "Norwood-205 St - Station",
+    "historicalAvailability": 0.97831541218638,
+    "meanMonthlyUnscheduledOutages": 3.6666666666666665,
+    "risk": "moderate",
+    "riskProbability": 0.41533,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "414",
+    "stationName": "Bowling Green - Station",
+    "historicalAvailability": 0.9755152329749104,
+    "meanMonthlyUnscheduledOutages": 63.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99994,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "211",
+    "stationName": "Bedford Pk Blvd - Station",
+    "historicalAvailability": 0.9913754480286738,
+    "meanMonthlyUnscheduledOutages": 2.3333333333333335,
+    "risk": "low",
+    "riskProbability": 0.22455,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "405",
+    "stationName": "23 St - Station",
+    "historicalAvailability": 0.9888328853046595,
+    "meanMonthlyUnscheduledOutages": 1.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.15689,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "212",
+    "stationName": "Kingsbridge Rd - Station",
+    "historicalAvailability": 0.9662559737156511,
+    "meanMonthlyUnscheduledOutages": 8.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.75479,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "404",
+    "stationName": "28 St - Station",
+    "historicalAvailability": 1.0,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.11249,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "215",
+    "stationName": "Tremont Av - Station",
+    "historicalAvailability": 0.9849387694145759,
+    "meanMonthlyUnscheduledOutages": 7.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.65997,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "421",
+    "stationName": "Gun Hill Rd - Station",
+    "historicalAvailability": 0.9581541218637993,
+    "meanMonthlyUnscheduledOutages": 24.0,
+    "risk": "elevated",
+    "riskProbability": 0.99847,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "431",
+    "stationName": "Intervale Av - Station",
+    "historicalAvailability": 0.9711917562724014,
+    "meanMonthlyUnscheduledOutages": 2.0,
+    "risk": "moderate",
+    "riskProbability": 0.4495,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "434",
+    "stationName": "3 Av-149 St - Station",
+    "historicalAvailability": 0.1757728494623656,
+    "meanMonthlyUnscheduledOutages": 7.333333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.85993,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "175",
+    "stationName": "Hoyt-Schermerhorn - Station",
+    "historicalAvailability": 0.9940636200716846,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "moderate",
+    "riskProbability": 0.43815,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "604",
+    "stationName": "161 St-Yankee Stadium (B,D,4)",
+    "historicalAvailability": 0.3898969534050179,
+    "meanMonthlyUnscheduledOutages": 22.0,
+    "risk": "elevated",
+    "riskProbability": 0.99338,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "147",
+    "stationName": "175 St - Station",
+    "historicalAvailability": 0.9933019713261648,
+    "meanMonthlyUnscheduledOutages": 6.333333333333333,
+    "risk": "moderate",
+    "riskProbability": 0.62494,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "602",
+    "stationName": "14 St-Union Sq (L,N,Q,R,4,5,6)",
+    "historicalAvailability": 0.7676875320020481,
+    "meanMonthlyUnscheduledOutages": 11.0,
+    "risk": "elevated",
+    "riskProbability": 0.99006,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "151",
+    "stationName": "145 St - Station",
+    "historicalAvailability": 0.983646953405018,
+    "meanMonthlyUnscheduledOutages": 12.0,
+    "risk": "elevated",
+    "riskProbability": 0.95109,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "601",
+    "stationName": "14 St (F,M,1,2,3)/6 Av (L)",
+    "historicalAvailability": 0.995218538430904,
+    "meanMonthlyUnscheduledOutages": 10.0,
+    "risk": "elevated",
+    "riskProbability": 0.92576,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "477",
+    "stationName": "72 St - Station",
+    "historicalAvailability": 0.975897457437276,
+    "meanMonthlyUnscheduledOutages": 47.333333333333336,
+    "risk": "elevated",
+    "riskProbability": 0.99981,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "476",
+    "stationName": "86 St - Station",
+    "historicalAvailability": 0.9521699522102748,
+    "meanMonthlyUnscheduledOutages": 40.333333333333336,
+    "risk": "elevated",
+    "riskProbability": 0.99938,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "153",
+    "stationName": "125 St - Station",
+    "historicalAvailability": 0.9966995221027479,
+    "meanMonthlyUnscheduledOutages": 6.0,
+    "risk": "elevated",
+    "riskProbability": 0.8937,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "475",
+    "stationName": "96 St - Station",
+    "historicalAvailability": 0.976753421309873,
+    "meanMonthlyUnscheduledOutages": 36.666666666666664,
+    "risk": "elevated",
+    "riskProbability": 0.99942,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "162",
+    "stationName": "50 St - Station",
+    "historicalAvailability": 0.9883624551971326,
+    "meanMonthlyUnscheduledOutages": 0.0,
+    "risk": "low",
+    "riskProbability": 0.15541,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "471",
+    "stationName": "34 St-Hudson Yards - Station",
+    "historicalAvailability": 0.9512354390681004,
+    "meanMonthlyUnscheduledOutages": 95.33333333333333,
+    "risk": "elevated",
+    "riskProbability": 0.99995,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "461",
+    "stationName": "Queensboro Plaza - Station",
+    "historicalAvailability": 0.8066308243727599,
+    "meanMonthlyUnscheduledOutages": 3.3333333333333335,
+    "risk": "moderate",
+    "riskProbability": 0.38642,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "164",
+    "stationName": "34 St-Penn Station - Station",
+    "historicalAvailability": 0.682543682795699,
+    "meanMonthlyUnscheduledOutages": 10.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.72994,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "451",
+    "stationName": "Junction Blvd - Station",
+    "historicalAvailability": 0.9224014336917563,
+    "meanMonthlyUnscheduledOutages": 10.333333333333334,
+    "risk": "elevated",
+    "riskProbability": 0.91637,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "167",
+    "stationName": "W 4 St-Wash Sq - Station",
+    "historicalAvailability": 0.9646102150537634,
+    "meanMonthlyUnscheduledOutages": 31.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.99855,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "168",
+    "stationName": "Spring St - Station",
+    "historicalAvailability": 0.9875896057347671,
+    "meanMonthlyUnscheduledOutages": 0.3333333333333333,
+    "risk": "low",
+    "riskProbability": 0.07873,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "447",
+    "stationName": "Flushing-Main St - Station",
+    "historicalAvailability": 0.9648745519713262,
+    "meanMonthlyUnscheduledOutages": 16.666666666666668,
+    "risk": "elevated",
+    "riskProbability": 0.9951,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "173",
+    "stationName": "High St - Station",
+    "historicalAvailability": 0.9823387096774193,
+    "meanMonthlyUnscheduledOutages": 29.333333333333332,
+    "risk": "elevated",
+    "riskProbability": 0.99976,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "444",
+    "stationName": "Gun Hill Rd - Station",
+    "historicalAvailability": 0.9782930107526882,
+    "meanMonthlyUnscheduledOutages": 3.0,
+    "risk": "moderate",
+    "riskProbability": 0.40637,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "438",
+    "stationName": "135 St - Station",
+    "historicalAvailability": 0.979681899641577,
+    "meanMonthlyUnscheduledOutages": 2.0,
+    "risk": "moderate",
+    "riskProbability": 0.41842,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "295",
+    "stationName": "231 St - Station",
+    "historicalAvailability": 0.9916442652329749,
+    "meanMonthlyUnscheduledOutages": 4.333333333333333,
+    "risk": "moderate",
+    "riskProbability": 0.37515,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "605",
+    "stationName": "168 St (A,C,1)",
+    "historicalAvailability": 0.9858870967741935,
+    "meanMonthlyUnscheduledOutages": 12.666666666666666,
+    "risk": "elevated",
+    "riskProbability": 0.9789,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "complexId": "636",
+    "stationName": "Jay St-MetroTech (A,C,F,R)",
+    "historicalAvailability": 0.9818349263241736,
+    "meanMonthlyUnscheduledOutages": 30.0,
+    "risk": "elevated",
+    "riskProbability": 0.99982,
+    "model": "tabpfn",
+    "asOf": "2026-08-01T00:00:00+00:00"
+  }
+]

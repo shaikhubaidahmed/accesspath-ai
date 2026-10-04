@@ -6,8 +6,8 @@ One project may enter several categories, but the challenge requires genuine use
 
 1. Deploy the web service on Render and save the public URL.
 2. Run Gemma through Ollama, locally or on a private DigitalOcean GPU Droplet. Capture one workflow trace whose interpretation and explanation steps report Gemma.
-3. Run the TabPFN benchmark and commit the generated evaluation and reliability artifacts.
-4. Run the Tinker fine-tune and commit its before-and-after evaluation.
+3. Commit the completed TabPFN evaluation, model metadata, and reliability artifacts, then show the scored route evidence.
+4. Rerun the completed Tinker experiment with persistent checkpoint capture, then commit its before-and-after evaluation.
 5. Add ElevenLabs credentials and record the briefing audio in the demo video.
 6. Configure Sentry, run the outage demo, and capture its agent trace waterfall.
 7. Start Temporal, run its worker, call `/api/monitor`, and capture the workflow event history.
@@ -20,8 +20,8 @@ One project may enter several categories, but the challenge requires genuine use
 | Category | Activation | Proof to put in the post | Ready now |
 | --- | --- | --- | --- |
 | Best Use of Render | Deploy `render.yaml` | public demo URL and Render service screenshot | code ready |
-| Best Use of TabPFN | set `TABPFN_TOKEN`; run `ml/train_tabpfn.py` | metric table plus `tabpfn-evaluation.json` | code ready |
-| Best Use of Tinker | set `TINKER_API_KEY`; run `training/tinker_finetune.py` | baseline and tuned accuracy plus loss curve | code ready |
+| Best Use of TabPFN | authenticated run complete | metric table, model metadata, evaluation, and 150 forecasts | local proof complete |
+| Best Use of Tinker | rerun updated script with `TINKER_API_KEY` | baseline and tuned accuracy, full loss sequence, and persistent checkpoint paths | metrics complete; checkpoint proof pending |
 | Best Use of DigitalOcean | deploy `.do/app.yaml` or the Gemma GPU Droplet | app URL or Droplet console and private model endpoint | manifest ready |
 | Best Use of Gemma | run `gemma3:4b` through Ollama | workflow trace showing Gemma on real requests | adapter ready |
 | Best Use of Backboard | set `BACKBOARD_API_KEY`; run benchmark script | committed three-model comparison | code ready |
@@ -65,4 +65,4 @@ Keep the video under three minutes:
 6. Open the workflow trace, then show the TabPFN and Tinker evaluation results.
 7. End on the deployed URL and repository.
 
-Before publishing, replace every placeholder in `SUBMISSION.md`, add the public URLs, include the friend's reaction if they tested it, and delete any prize category whose proof is incomplete.
+Before publishing, replace every placeholder in `SUBMISSION.md`, add the public URLs, and delete any prize category whose proof is incomplete. Do not add a reaction or quote unless the sibling actually tested the project and approved its use.

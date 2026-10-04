@@ -42,7 +42,11 @@ export function loadDataStore(): Promise<DataStore> {
     json<ScenarioFixture>("data/fixtures/scenario-outage.json")
   ]).then(([graph, historicalReliability, tabPfnReliability, equipment, outages, scenario]) => {
     const predicted = new Map((tabPfnReliability ?? []).map((profile) => [profile.complexId, profile]));
-    const reliability = historicalReliability.map((profile) => predicted.get(profile.complexId) ?? profile);
+    const historicalIds = new Set(historicalReliability.map((profile) => profile.complexId));
+    const reliability = [
+      ...historicalReliability.map((profile) => predicted.get(profile.complexId) ?? profile),
+      ...(tabPfnReliability ?? []).filter((profile) => !historicalIds.has(profile.complexId))
+    ];
     return {
       graph,
       reliability,

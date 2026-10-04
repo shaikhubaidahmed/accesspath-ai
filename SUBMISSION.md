@@ -97,12 +97,10 @@ My TabPFN pipeline uses monthly MTA availability and unscheduled-outage history.
 
 I compare TabPFN with a histogram gradient-boosting baseline on balanced accuracy, F1, ROC AUC, and runtime. The real TabPFN run writes station-complex forecasts that the TypeScript route engine loads directly.
 
-<!-- Replace this table after running ml/train_tabpfn.py. -->
-
 | Model | Balanced accuracy | F1 | ROC AUC |
 | --- | ---: | ---: | ---: |
-| Baseline | [RESULT] | [RESULT] | [RESULT] |
-| TabPFN | [RESULT] | [RESULT] | [RESULT] |
+| Baseline | 0.7878 | 0.8574 | 0.8908 |
+| TabPFN | 0.7888 | 0.8583 | 0.8946 |
 
 The script refuses to write a `tabpfn` artifact without a real token. A fallback score should not inherit a partner's name.
 
@@ -112,12 +110,22 @@ The Tinker training path fine-tunes Qwen3.5-4B for one narrow task: turn a rider
 
 The training script measures the base model first, performs 12 LoRA supervised updates, and measures the same holdout again. It records exact JSON match, per-field accuracy, loss, and elapsed time.
 
-<!-- Replace these values and add the loss curve after running training/tinker_finetune.py. -->
+- Base exact match: **0.0%**
+- Fine-tuned exact match: **50.0%**
+- Base field accuracy: **0.0%**
+- Fine-tuned field accuracy: **90.0%**
+- Training loss: **1.2858** (step 00) → **0.0207** (step 11)
 
-- Base exact match: **[RESULT]**
-- Fine-tuned exact match: **[RESULT]**
-- Base field accuracy: **[RESULT]**
-- Fine-tuned field accuracy: **[RESULT]**
+The complete 12-step training-loss sequence was:
+
+```text
+1.2858 → 0.1907 → 0.0862 → 0.0586 → 0.0375 → 0.0322
+       → 0.0222 → 0.0140 → 0.0049 → 0.0014 → 0.0057 → 0.0207
+```
+
+This is a four-example holdout: the base model produced no parseable JSON, while the fine-tuned model matched two examples exactly and 18 of 20 individual fields.
+
+The original run did not preserve persistent checkpoint paths, so I am not claiming the Tinker prize category yet. The updated training script records both baseline and fine-tuned checkpoint identities on the next authenticated run.
 
 That before-and-after result matters more than saying a model was fine-tuned.
 
@@ -146,7 +154,7 @@ The repository currently passes:
 
 ```text
 4 test files
-10 tests
+11 tests
 Oxc TypeScript lint
 TypeScript client check
 TypeScript server check
@@ -155,7 +163,7 @@ npm audit: 0 vulnerabilities
 production SPA and API smoke test
 ```
 
-Tests cover the hard access constraint, the Queensboro Plaza reroute, evidence labels, all five Mastra steps, malformed API input, health metadata, and Temporal's degraded response.
+Tests cover the hard access constraint, the Queensboro Plaza reroute, complete TabPFN forecast loading with historical fallbacks, evidence labels, all five Mastra steps, malformed API input, health metadata, and Temporal's degraded response.
 
 ## Why Does Open Innovation Matter?
 
@@ -180,6 +188,7 @@ I used an AI coding agent to help build the project during the challenge window.
 Current qualified category:
 
 - Best Use of Mastra
+- Best Use of TabPFN
 
 <!-- Add a partner category only after its proof item in docs/partner-evidence.md exists. The prepared targets are Render, TabPFN, Tinker, DigitalOcean, Gemma, Backboard, ElevenLabs, MongoDB Atlas, Sentry Agent Tracing, SerpApi, Temporal, and Tiger Data. -->
 
