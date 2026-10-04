@@ -17,7 +17,7 @@ This audit answers a stricter question than “does adapter code exist?”: can 
 | Tiger Data | Not yet | Timestamped-event adapter; memory fallback active | Capture hosted event rows first |
 | Sentry | Not yet | Instrumentation exists; no DSN evidence | Capture trace and handled failure first |
 | SerpApi | Not yet | Official-domain search adapter | Capture returned evidence record first |
-| Render | Not yet | Dockerfile and Blueprint | Deploy and verify public URL first |
+| Render | Yes | Public Docker service, HTTP 200 health response, and successful production outage scenario | Claim and show the live app plus Render service screen in the demo |
 | DigitalOcean | Not yet | App Platform and GPU cloud-init manifests | Deploy and capture cloud proof first |
 | GitHub Copilot | No | Copilot was not used; GitHub Actions is separate | Do not claim |
 | Arduino | No | No relevant implementation | Do not claim |
@@ -53,7 +53,7 @@ Current local gate:
 - production build passes;
 - dependency audit reports no known vulnerabilities.
 
-The remaining execution risk is operational proof: public deployment, a public CI run, and real partner service traces.
+The remaining execution risk is a public CI run, a recorded demo, and real partner service traces beyond Render, TabPFN, and Tinker.
 
 ### Partner technology: broad implementation, narrow proof today
 
@@ -61,8 +61,8 @@ Mastra is proven in the default build, while TabPFN and Tinker now have authenti
 
 ## Remaining risks, in priority order
 
-1. **No public demo or video URL:** required for judging; the public repository is already available.
-2. **Most external partner run artifacts are still absent:** TabPFN and Tinker have local run evidence, while the remaining integrations still need proof.
+1. **No video URL:** the public Render demo and repository are available, but the three-minute recording is still required for judging.
+2. **Most external partner run artifacts are still absent:** Render, TabPFN, and Tinker have evidence, while the remaining integrations still need proof.
 3. **No recorded three-minute demo:** the strongest behavior is easier to understand on video than in prose.
 4. **Live transit uncertainty:** use the labelled scenario as the judging path and demonstrate live mode separately.
 

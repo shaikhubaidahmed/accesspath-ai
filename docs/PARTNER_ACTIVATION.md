@@ -4,7 +4,7 @@ One project may enter several categories, but the challenge requires genuine use
 
 ## Highest-value activation order
 
-1. Deploy the web service on Render and save the public URL.
+1. Keep the public Render service healthy and capture its service screen for the demo.
 2. Run Gemma through Ollama, locally or on a private DigitalOcean GPU Droplet. Capture one workflow trace whose interpretation and explanation steps report Gemma.
 3. Commit the completed TabPFN evaluation, model metadata, and reliability artifacts, then show the scored route evidence.
 4. Commit the completed Tinker evaluation with its before-and-after metrics and persistent checkpoint paths, then show it in the demo.
@@ -19,7 +19,7 @@ One project may enter several categories, but the challenge requires genuine use
 
 | Category | Activation | Proof to put in the post | Ready now |
 | --- | --- | --- | --- |
-| Best Use of Render | Deploy `render.yaml` | public demo URL and Render service screenshot | code ready |
+| Best Use of Render | public deployment complete | public demo URL, successful health and outage checks, and Render service screen | public proof complete; screenshot pending |
 | Best Use of TabPFN | authenticated run complete | metric table, model metadata, evaluation, and 150 forecasts | local proof complete |
 | Best Use of Tinker | authenticated run complete | baseline and tuned accuracy, full loss sequence, model identity, and persistent checkpoint paths | local proof complete |
 | Best Use of DigitalOcean | deploy `.do/app.yaml` or the Gemma GPU Droplet | app URL or Droplet console and private model endpoint | manifest ready |

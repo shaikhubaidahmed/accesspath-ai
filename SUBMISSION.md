@@ -20,7 +20,7 @@ The interface keeps both plans on screen. It also shows the evidence ledger, cur
 
 ## Demo
 
-- Live app: **[ADD RENDER OR DIGITALOCEAN URL]**
+- Live app: **https://accesspath-ai.onrender.com**
 - Three-minute video: **[ADD VIDEO URL]**
 
 For the stable judging path:
@@ -188,6 +188,7 @@ I used an AI coding agent to help build the project during the challenge window.
 Current qualified categories:
 
 - Best Use of Mastra
+- Best Use of Render
 - Best Use of TabPFN
 - Best Use of Tinker
 

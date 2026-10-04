@@ -112,9 +112,10 @@ This is the proof index for the final submission. **Ready** means an integration
 - **What we built:** a production container and Render Blueprint for the combined web/API service.
 - **Where it is used:** `Dockerfile` and `render.yaml`.
 - **Why it matters:** the exact tested artifact can become the public judging demo.
-- **Demo path:** deploy the Blueprint and run `/api/health` plus the outage scenario.
-- **Evidence required:** public URL, service screenshot, and production health response.
-- **Status:** deployment ready; public service pending.
+- **Demo path:** open `https://accesspath-ai.onrender.com`, run the outage scenario, and inspect `/api/health`.
+- **Repository evidence:** `render.yaml` defines the free Singapore Docker service and its `/api/health` check. Render deployed commit `48a0a4c` as service `srv-db1e8avavr4c73bgeq80`.
+- **Result:** the public homepage and health endpoint returned HTTP 200, and the production outage scenario completed all five workflow steps while replacing the unavailable Queensboro Plaza transfer with a Times Square transfer.
+- **Status:** proven on the public Render service; capture the Render service screen in the final demo video.
 
 ### DigitalOcean: Best Use of DigitalOcean
 
