@@ -10,14 +10,10 @@ import {
   ChevronDown,
   CircleAlert,
   Clock3,
-  Cloud,
-  Code2,
-  Database,
   Download,
   ExternalLink,
   FileCheck2,
   Gauge,
-  GitBranch,
   Landmark,
   LocateFixed,
   Map,
@@ -27,13 +23,9 @@ import {
   Network,
   RefreshCw,
   Route,
-  Search,
-  Server,
   ShieldCheck,
-  Sparkles,
   Sun,
   TimerReset,
-  TrainFront,
   Volume2,
   Waypoints,
   X
@@ -43,7 +35,6 @@ import type {
   BootstrapResponse,
   DataMode,
   Evidence,
-  IntegrationStatus,
   JourneyRoute,
   JourneyStop,
   PlanResponse,
@@ -384,41 +375,6 @@ function EvidenceCard({ evidence }: { evidence: Evidence }) {
   );
 }
 
-function IntegrationGrid({ integrations }: { integrations: IntegrationStatus[] }) {
-  const icons: Record<string, React.ReactNode> = {
-    gemma: <BrainCircuit size={19} />,
-    tabpfn: <Gauge size={19} />,
-    render: <Server size={19} />,
-    digitalocean: <Cloud size={19} />,
-    mastra: <GitBranch size={19} />,
-    elevenlabs: <AudioLines size={19} />,
-    serpapi: <Search size={19} />,
-    mongodb: <Database size={19} />,
-    sentry: <ShieldCheck size={19} />,
-    temporal: <TimerReset size={19} />,
-    tigerdata: <Database size={19} />,
-    backboard: <Network size={19} />,
-    tinker: <Sparkles size={19} />,
-    mta: <TrainFront size={19} />
-  };
-  return (
-    <div className="integration-grid">
-      {integrations.map((integration) => (
-        <article className="integration-card" key={integration.id}>
-          <div className="integration-icon" aria-hidden="true">{icons[integration.id] ?? <Code2 size={19} />}</div>
-          <div>
-            <strong>{integration.name}</strong>
-            <p>{integration.role}</p>
-          </div>
-          <span className={`integration-state state-${integration.state}`}>
-            <i /> {integration.state}
-          </span>
-        </article>
-      ))}
-    </div>
-  );
-}
-
 function App() {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window === "undefined") return "light";
@@ -575,7 +531,6 @@ function App() {
         <nav className={mobileOpen ? "open" : ""} aria-label="Primary navigation">
           <a href="#planner" onClick={() => setMobileOpen(false)}>Plan a journey</a>
           <a href="#evidence" onClick={() => setMobileOpen(false)}>Evidence</a>
-          <a href="#technology" onClick={() => setMobileOpen(false)}>How it works</a>
           <a href="#story" onClick={() => setMobileOpen(false)}>Why we built it</a>
         </nav>
         <div className="header-actions">
@@ -766,47 +721,6 @@ function App() {
               <div className="evidence-list">
                 {plan.evidence.map((evidence) => <EvidenceCard evidence={evidence} key={evidence.id} />)}
               </div>
-            </section>
-
-            <section className="technology-section" id="technology">
-              <div className="section-heading technology-heading">
-                <span className="eyebrow"><Network size={14} aria-hidden="true" /> Open system, observable decisions</span>
-                <h2>AI interprets.<br /><em>Evidence decides.</em></h2>
-                <p>Each partner owns a real system responsibility. The app degrades visibly when a service is not configured.</p>
-              </div>
-              <div className="architecture-flow" aria-label="AccessPath processing architecture">
-                <div><Accessibility size={22} /><strong>Access needs</strong><span>Private rider constraints</span></div>
-                <ArrowRight size={20} aria-hidden="true" />
-                <div><BrainCircuit size={22} /><strong>Gemma + Mastra</strong><span>Interpret and orchestrate</span></div>
-                <ArrowRight size={20} aria-hidden="true" />
-                <div><TrainFront size={22} /><strong>MTA + TabPFN</strong><span>Verify and score risk</span></div>
-                <ArrowRight size={20} aria-hidden="true" />
-                <div><Route size={22} /><strong>Route engine</strong><span>Enforce hard constraints</span></div>
-              </div>
-              <IntegrationGrid integrations={plan.integrations} />
-              <details className="trace-panel">
-                <summary><Code2 size={18} aria-hidden="true" /> How this plan was built <span>{plan.trace.length} checks</span></summary>
-                <p className="trace-help">
-                  Each check completed. A built-in fallback means an optional service was unavailable, so AccessPath used local rules or bundled official sources instead.
-                </p>
-                <ol>
-                  {plan.trace.map((step, index) => (
-                    <li key={`${step.step}-${index}`}>
-                      <span className={`trace-state ${step.status}`}><Check size={14} aria-hidden="true" /></span>
-                      <div className="trace-copy">
-                        <div className="trace-heading">
-                          <strong>{step.step}</strong>
-                          <span className={`trace-label ${step.status}`}>{step.status === "complete" ? "Completed" : "Built-in fallback"}</span>
-                        </div>
-                        <p>{step.detail}</p>
-                      </div>
-                      <time aria-label={step.durationMs === 0 ? "Less than one millisecond" : `${step.durationMs} milliseconds`}>
-                        {step.durationMs === 0 ? "<1 ms" : `${step.durationMs} ms`}
-                      </time>
-                    </li>
-                  ))}
-                </ol>
-              </details>
             </section>
 
             <section className="closing-section">

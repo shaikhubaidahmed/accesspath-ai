@@ -1396,12 +1396,20 @@ em {
 }
 
 .evidence-section {
+  --evidence-background: #142d28;
+  --evidence-surface: #203b35;
+  --evidence-border: #4a6a63;
+  --evidence-heading: #ffffff;
+  --evidence-body: #cfdfda;
+  --evidence-card-copy: #f4f9f7;
+  --evidence-link: #9fe0d1;
+  --evidence-muted: #b9cbc6;
   display: grid;
   grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.25fr);
   gap: 70px;
   padding: 100px clamp(24px, 7vw, 110px);
-  color: #fff;
-  background: var(--ink);
+  color: var(--evidence-heading);
+  background: var(--evidence-background);
 }
 
 .light-eyebrow {
@@ -1409,17 +1417,17 @@ em {
 }
 
 .evidence-intro h2 {
-  color: #fff;
+  color: var(--evidence-heading);
 }
 
 .evidence-intro > p {
-  color: #c9ddd7;
+  color: var(--evidence-body);
 }
 
 .button.light-outline {
   margin-top: 28px;
-  border-color: rgba(255, 255, 255, 0.34);
-  color: #fff;
+  border-color: #8dbdb2;
+  color: var(--evidence-heading);
   background: transparent;
 }
 
@@ -1439,9 +1447,9 @@ em {
   min-height: 225px;
   flex-direction: column;
   padding: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--evidence-border);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--evidence-surface);
   transition: border-color 180ms ease, background 180ms ease;
 }
 
@@ -1492,7 +1500,7 @@ em {
 
 .evidence-card > p {
   margin: 24px 0 18px;
-  color: #f0f7f5;
+  color: var(--evidence-card-copy);
   font-size: 15px;
   line-height: 1.55;
 }
@@ -1509,7 +1517,7 @@ em {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: #94d7c7;
+  color: var(--evidence-link);
   font-size: 11px;
   font-weight: 700;
   text-decoration: none;
@@ -1520,9 +1528,20 @@ em {
 }
 
 .evidence-meta time {
-  color: #9eb4ae;
+  color: var(--evidence-muted);
   font-size: 10px;
   text-align: right;
+}
+
+html[data-theme="dark"] .evidence-section {
+  --evidence-background: #071410;
+  --evidence-surface: #112620;
+  --evidence-border: #41675d;
+  --evidence-heading: #f7fcfa;
+  --evidence-body: #c9ded8;
+  --evidence-card-copy: #f1f8f5;
+  --evidence-link: #a8eadb;
+  --evidence-muted: #bbcec8;
 }
 
 .technology-section {
