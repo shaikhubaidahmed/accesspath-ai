@@ -447,10 +447,17 @@ function App() {
     window.localStorage.setItem("accesspath-theme", theme);
   }, [theme]);
 
-  async function runPlan(overrides?: { originId?: string; destinationId?: string; mode?: DataMode }) {
+  async function runPlan(overrides?: {
+    originId?: string;
+    destinationId?: string;
+    mode?: DataMode;
+    profile?: AccessibilityProfile;
+    revealResults?: boolean;
+  }) {
     const selectedOrigin = overrides?.originId ?? originId;
     const selectedDestination = overrides?.destinationId ?? destinationId;
     const selectedMode = overrides?.mode ?? mode;
+    const selectedProfile = overrides?.profile ?? profile;
     if (!selectedOrigin || !selectedDestination) return;
     setLoading(true);
     setError("");
@@ -458,12 +465,18 @@ function App() {
       const response = await fetch("/api/plan", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ originId: selectedOrigin, destinationId: selectedDestination, mode: selectedMode, profile })
+        body: JSON.stringify({ originId: selectedOrigin, destinationId: selectedDestination, mode: selectedMode, profile: selectedProfile })
       });
       const payload = await response.json() as PlanWithPersistence & { error?: string };
       if (!response.ok) throw new Error(payload.error ?? "Unable to plan this journey.");
       setPlan(payload);
-      window.setTimeout(() => resultRef.current?.focus({ preventScroll: true }), 120);
+      window.setTimeout(() => {
+        resultRef.current?.focus({ preventScroll: true });
+        if (overrides?.revealResults) {
+          const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          resultRef.current?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+        }
+      }, 120);
     } catch (requestError) {
       setError(requestError instanceof Error ? requestError.message : "Unable to plan this journey.");
     } finally {
@@ -490,6 +503,24 @@ function App() {
     autoRan.current = true;
     void runPlan({ originId: bootstrap.demo.originId, destinationId: bootstrap.demo.destinationId, mode: "scenario" });
   }, [bootstrap]);
+
+  function runOutageDemo() {
+    if (!bootstrap) return;
+    const demoProfile = { ...profile, stepFree: true, avoidLongWalks: true };
+    setOriginId(bootstrap.demo.originId);
+    setDestinationId(bootstrap.demo.destinationId);
+    setMode("scenario");
+    setProfile(demoProfile);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.getElementById("planner")?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+    void runPlan({
+      originId: bootstrap.demo.originId,
+      destinationId: bootstrap.demo.destinationId,
+      mode: "scenario",
+      profile: demoProfile,
+      revealResults: true
+    });
+  }
 
   async function playBriefing() {
     if (!plan) return;
@@ -577,8 +608,9 @@ function App() {
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#planner"><Route size={18} aria-hidden="true" /> Plan my route</a>
-              <button className="button secondary" onClick={() => void runPlan({ mode: "scenario" })} disabled={!bootstrap || loading}>
-                <RefreshCw size={18} aria-hidden="true" /> Run the outage demo
+              <button className="button secondary" onClick={runOutageDemo} disabled={!bootstrap || loading}>
+                <RefreshCw className={loading ? "spin" : undefined} size={18} aria-hidden="true" />
+                {loading ? "Running demo…" : "Run the outage demo"}
               </button>
             </div>
             <div className="trust-row" aria-label="AccessPath principles">
@@ -753,13 +785,24 @@ function App() {
               </div>
               <IntegrationGrid integrations={plan.integrations} />
               <details className="trace-panel">
-                <summary><Code2 size={18} aria-hidden="true" /> Inspect this run <span>{plan.trace.length} workflow steps</span></summary>
+                <summary><Code2 size={18} aria-hidden="true" /> How this plan was built <span>{plan.trace.length} checks</span></summary>
+                <p className="trace-help">
+                  Each check completed. A built-in fallback means an optional service was unavailable, so AccessPath used local rules or bundled official sources instead.
+                </p>
                 <ol>
                   {plan.trace.map((step, index) => (
                     <li key={`${step.step}-${index}`}>
                       <span className={`trace-state ${step.status}`}><Check size={14} aria-hidden="true" /></span>
-                      <div><strong>{step.step}</strong><p>{step.detail}</p></div>
-                      <time>{step.durationMs} ms</time>
+                      <div className="trace-copy">
+                        <div className="trace-heading">
+                          <strong>{step.step}</strong>
+                          <span className={`trace-label ${step.status}`}>{step.status === "complete" ? "Completed" : "Built-in fallback"}</span>
+                        </div>
+                        <p>{step.detail}</p>
+                      </div>
+                      <time aria-label={step.durationMs === 0 ? "Less than one millisecond" : `${step.durationMs} milliseconds`}>
+                        {step.durationMs === 0 ? "<1 ms" : `${step.durationMs} ms`}
+                      </time>
                     </li>
                   ))}
                 </ol>

@@ -20,11 +20,11 @@ describe("Mastra evidence workflow", () => {
     expect(plan.recommended.stops.length).toBeGreaterThan(2);
     expect(plan.evidence.length).toBeGreaterThanOrEqual(3);
     expect(plan.trace.map((item) => item.step)).toEqual([
-      "Interpret access needs",
-      "Resolve live infrastructure evidence",
-      "Compute constrained route",
-      "Explain the verified route",
-      "Ground destination evidence"
+      "Understand access needs",
+      "Check lift and outage information",
+      "Find a route that keeps your requirements",
+      "Write the journey briefing",
+      "Check extra destination information"
     ]);
     expect(plan.integrations.find((item) => item.id === "mastra")?.state).toBe("live");
   });

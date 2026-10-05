@@ -341,10 +341,13 @@ export async function createPlan(
   const explanationStarted = performance.now();
   const explanation = await explainRoute(recommended, request.profile);
   trace.push({
-    step: "Explain the verified route",
+    step: "Write the journey briefing",
     status: explanation.model === "gemma" ? "complete" : "fallback",
     durationMs: Math.round(performance.now() - explanationStarted),
-    detail: explanation.model === "gemma" ? "Gemma generated a constrained explanation." : "A deterministic, fact-bound template was used."
+    detail:
+      explanation.model === "gemma"
+        ? "Gemma wrote a briefing limited to the verified route facts."
+        : "AccessPath wrote the briefing directly from verified route facts without an external model."
   });
 
   return {

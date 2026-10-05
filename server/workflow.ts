@@ -39,7 +39,7 @@ const interpretNeeds = createStep({
       profile: result.profile,
       trace: [
         {
-          step: "Interpret access needs",
+          step: "Understand access needs",
           status: result.model === "rules" ? ("fallback" as const) : ("complete" as const),
           durationMs: Math.round(performance.now() - started),
           detail:
@@ -47,7 +47,7 @@ const interpretNeeds = createStep({
               ? "The Tinker fine-tuned adapter produced validated structured constraints."
               : result.model === "gemma"
                 ? "Gemma produced validated structured constraints locally."
-                : "Privacy-safe rules preserved explicit preferences."
+                : "Built-in privacy-safe rules preserved the preferences selected in the planner."
         }
       ]
     };
@@ -69,7 +69,7 @@ const resolveLiveEvidence = createStep({
       trace: [
         ...inputData.trace,
         {
-          step: "Resolve live infrastructure evidence",
+          step: "Check lift and outage information",
           status: outageResult.state === "fallback" ? ("fallback" as const) : ("complete" as const),
           durationMs: Math.round(performance.now() - started),
           detail: outageResult.detail
@@ -90,10 +90,10 @@ const computeRoute = createStep({
     const trace = [
       ...inputData.trace,
       {
-        step: "Compute constrained route",
+        step: "Find a route that keeps your requirements",
         status: "complete" as const,
         durationMs: 0,
-        detail: "Deterministic graph search enforced accessible starts, arrivals, and transfers."
+        detail: "The route engine kept accessible starts, arrivals, and transfers as hard requirements."
       }
     ];
     const plan = await createPlan(store, inputData, inputData.outageResult, trace);
@@ -116,10 +116,12 @@ const augmentEvidence = createStep({
       trace: [
         ...inputData.trace,
         {
-          step: "Ground destination evidence",
+          step: "Check extra destination information",
           status: evidence ? ("complete" as const) : ("fallback" as const),
           durationMs: Math.round(performance.now() - started),
-          detail: evidence ? "SerpApi returned evidence from an official domain." : "No SerpApi key or verified result; official bundled sources remain in use."
+          detail: evidence
+            ? "SerpApi added a current result from an official domain."
+            : "SerpApi is not configured, so no extra web result was added; bundled official sources remain in use."
         }
       ]
     };

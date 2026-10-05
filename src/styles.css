@@ -1687,6 +1687,14 @@ em {
   list-style: none;
 }
 
+.trace-help {
+  margin: 0;
+  padding: 0 20px 16px;
+  color: #526a63;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .trace-panel li {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -1709,12 +1717,35 @@ em {
   background: #bd6b20;
 }
 
-.trace-panel li div {
+.trace-copy {
   min-width: 0;
+}
+
+.trace-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
 .trace-panel li strong {
   font-size: 13px;
+}
+
+.trace-label {
+  border-radius: 999px;
+  padding: 3px 7px;
+  color: #0c654e;
+  background: #e3f5ee;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.trace-label.fallback {
+  color: #8b4b10;
+  background: #fff0dc;
 }
 
 .trace-panel li p {
@@ -1861,6 +1892,7 @@ html[data-theme="dark"] .architecture-flow span,
 html[data-theme="dark"] .integration-card p,
 html[data-theme="dark"] .integration-state,
 html[data-theme="dark"] .trace-panel summary > span,
+html[data-theme="dark"] .trace-help,
 html[data-theme="dark"] .trace-panel li p,
 html[data-theme="dark"] .trace-panel li time,
 html[data-theme="dark"] footer {
